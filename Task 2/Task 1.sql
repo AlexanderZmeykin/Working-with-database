@@ -38,14 +38,6 @@ CREATE TABLE Author_Genre (
     FOREIGN KEY (Genre_ID)  REFERENCES Genre(Genre_ID)
 );
 
-CREATE TABLE Album_Genre (
-    Album_ID INTEGER,
-    Genre_ID INTEGER,
-    PRIMARY KEY (Album_ID, Genre_ID),
-    FOREIGN KEY (Album_ID) REFERENCES Album(Album_ID),
-    FOREIGN KEY (Genre_ID) REFERENCES Genre(Genre_ID)
-);
-
 CREATE TABLE Album_Author (
     Album_ID INTEGER,
     Author_ID INTEGER,
